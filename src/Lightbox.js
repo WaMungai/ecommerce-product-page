@@ -1,5 +1,5 @@
 import React from "react";
-import { close } from "../images/icon-close.svg";
+import close  from "./images/icon-close.svg";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function Lightbox({
