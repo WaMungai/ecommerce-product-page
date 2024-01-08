@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import minus from "./images/icon-minus.svg";
 import plus from "./images/icon-plus.svg";
-import Lightbox from "./Lightbox";
+import Lightbox from "./components/Lightbox";
 
 function App() {
   const [products] = useState(data);
