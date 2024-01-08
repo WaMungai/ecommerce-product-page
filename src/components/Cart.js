@@ -1,6 +1,7 @@
 import React from "react";
 import thumbnail from "../images/image-product-1-thumbnail.jpg";
-import iconDelete from "../images/icon-delete.svg"
+import iconDelete from "../images/icon-delete.svg";
+
 function Cart() {
   const text = "Autumn Limited Edition Sneakers";
   return (
@@ -25,10 +26,12 @@ function Cart() {
             </li>
           </ul>
           <button>
-            <img src={iconDelete} alt=""/>
+            <img src={iconDelete} alt="" />
           </button>
         </div>
-        <button className="bg-orange-500 py-2 px-4 text-2hite font-bold rounded-lg shadow mt-5 w-full hover:bg-orange-600 transition-all duration-200 ">Checkout</button>
+        <button className="bg-orange-500 py-2 px-4 text-2hite font-bold rounded-lg shadow mt-5 w-full hover:bg-orange-600 transition-all duration-200 ">
+          Checkout
+        </button>
       </article>
     </>
   );
