@@ -73,7 +73,7 @@ function App() {
                       onClick={nextSlide}
                       className="bg=white rounded-full p-5 shadow absolute right-4 top-1/2 -translate-y-1/2"
                     >
-                       <FaChevronRight />
+                      <FaChevronRight />
                     </button>
                   </li>
                 </ul>
@@ -81,21 +81,21 @@ function App() {
             ))}
           </div>
           <div className="hidden lg:block">
-            <img 
-            src={mainImage}
-            alt=""
-            className="w-full lg:rounded-2xl cursor pointer"
-            onClick={() => setShowLightbox(true)}
+            <img
+              src={mainImage}
+              alt=""
+              className="w-full lg:rounded-2xl cursor pointer"
+              onClick={() => setShowLightbox(true)}
             />
           </div>
           <ul className="hidden lg:flex items-center justify-start gap-5 flex-wrap mt-5">
-            {products.map((item, index) =>(
+            {products.map((item, index) => (
               <li
-              key={item.id}
-              onClick={() =>setValue(index)}
-              className={`${
-                index === value && "border-2 border-orange-400 opacity-80"
-              } border-2 rounded-2xl overflow-hidden cursor-pointer`}
+                key={item.id}
+                onClick={() => setValue(index)}
+                className={`${
+                  index === value && "border-2 border-orange-400 opacity-80"
+                } border-2 rounded-2xl overflow-hidden cursor-pointer`}
               >
                 <img src={item.thumbnail} alt="" className="w-20" />
               </li>
@@ -110,36 +110,38 @@ function App() {
             Fall Limited Edition Sneakers
           </h1>
           <p className="text-slate-600 mb-10 leading-relaxed">
-          These low-profile sneakers are your perfect casual wear companion.
+            These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
           <div className="flex flex-wrap items-center justify-between lg:flex-col lg:items-start lg:gap-2">
             <ul className="flex items-center gap-5">
               <li className="text-slate-900 font-bold text-2xl">$125.00</li>
-              <li className="bg-orange-100 py-1 px-2 text-orange-400 tracking-wide text-sm font-bold inline-block rounded shadow">50%</li>
+              <li className="bg-orange-100 py-1 px-2 text-orange-400 tracking-wide text-sm font-bold inline-block rounded shadow">
+                50%
+              </li>
             </ul>
-            <p className="text-slate-600 text-sm"><s>$250.00</s></p>
+            <p className="text-slate-600 text-sm">
+              <s>$250.00</s>
+            </p>
           </div>
           <div className="mt-10 lg:flex items-center justify-between gap-2">
             <ul className="flex items-center justify-between bg-slate-100 py-2 px-4 rounded shadow lg:flex-1">
               <li onClick={handleMinus} className="cursor-pointer">
-                <img src={minus} alt=""/>
+                <img src={minus} alt="" />
               </li>
               <li>{amount}</li>
-              <li
-              onClick={() =>setAmount(amount + 1)}
-              >
-                <img src={plus} alt=""/>
+              <li onClick={() => setAmount(amount + 1)}>
+                <img src={plus} alt="" />
               </li>
             </ul>
             <div className="lg:flex-1">
               <button className="flex items-center justify-center gap-4 bg-orange-500 py-2 px-4 text-white font-bold rounded-lg shadow mt-5 w-full lg:mt-0 hover:bg-orange-600 transition-all duration-200">
-                <AiOutlineShoppingCart />Add to cart
+                <AiOutlineShoppingCart />
+                Add to cart
               </button>
             </div>
           </div>
-
         </article>
       </section>
     </>

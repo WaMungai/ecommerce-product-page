@@ -22,7 +22,7 @@ function Cart() {
             )}...`}</li>
             <li className="text-slate-600 text-sm">
               $124.00 * 3{}
-              <span className="font-bold text-slate-900">$375.00</span>
+              <span className="font-bold text-slate-900">  $375.00</span>
             </li>
           </ul>
           <button>
